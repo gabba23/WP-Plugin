@@ -82,6 +82,12 @@ $factText = $fact['text'];
 
 }
 
+if (!function_exists('add_action')) {
+	echo 'bye';
+	exit;
+}
+
+
 function random_fact() {
 	$chosen = random_get_fact();
 	echo "<p id='bd'>$chosen</p>";
