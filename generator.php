@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -83,7 +84,7 @@ $factText = $fact['text'];
 }
 
 if (!function_exists('add_action')) {
-	echo 'bye';
+	echo 'k bye';
 	exit;
 }
 
@@ -111,4 +112,6 @@ function facte_css() {
 	";
 }
 
-add_action( 'wp_footer', 'facte_css' );
+add_action( 'admin_head', 'facte_css' );
+
+esc_html_e( 'Hello World', 'text_domain' );
